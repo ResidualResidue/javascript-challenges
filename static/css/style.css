@@ -4,6 +4,14 @@
     justify-content: center;
 }
 
+.my_danger {
+    color: red;
+}
+
+.my_go {
+    color: green;
+}
+
 .challenge{
     border-style: solid;
     border-color: black;
@@ -21,6 +29,14 @@
 }
 
 .button-container {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
 }
+
+.button-container button {
+    margin: 20px;
+}
+

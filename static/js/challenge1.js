@@ -12,3 +12,21 @@ function clickMe(){
 function reset(){
     document.getElementById("challenge1-output").innerText="";
 }
+
+function makeHeadersGreen(){
+    let headers = document.getElementsByClassName("header");
+    for(let i=0; i < headers.length; i++){
+        classes = headers[i].className.split(' ');
+        classes[1] = "my_danger";
+        headers[i].className=classes.join(' ');
+    }
+}
+
+function makeHeadersRed(){
+    let headers = document.getElementsByClassName("header");
+    for(let i=0; i < headers.length; i++){
+        classes = headers[i].className.split(' ');
+        classes[1] = "my_go";
+        headers[i].className=classes.join(' ');
+    }
+}
